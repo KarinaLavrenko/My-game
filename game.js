@@ -65,7 +65,6 @@ class Main extends Phaser.Scene {
         }
 
     }
-
     //
     jump() {
         this.tweens.add({
@@ -75,6 +74,7 @@ class Main extends Phaser.Scene {
             repeat: 1
         });
         this.girl.body.velocity.y = -150;
+        this.sound.play('jump');// додаємо відтворення звуку при кожному підлітанні
     }
 
     //Функція для створення блоку труби
